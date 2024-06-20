@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Compression</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Optimizilla Logo">
+      <h1>Optimizilla</h1>
+    </div>
+    <div class="language-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <!-- Add more languages as needed -->
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <p class="description">
+      This online image optimizer uses a smart combination of the best optimization and lossy compression algorithms to shrink JPEG, GIF and PNG images to the minimum possible size while keeping the required level of quality.
+    </p>
+
+    <div class="upload-section">
+      <button id="upload-button">Upload Files</button>
+      <button id="clear-button">Clear Queue</button>
+      <div class="drop-area" id="drop-area">
+        <p>Drop Your Files Here</p>
+      </div>
+    </div>
+
+    <button id="compress-button">Compress</button>
+
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-bar-inner" id="progress-bar-inner"></div>
+    </div>
+
+    <div id="after-compression">
+      <h2>After Compression</h2>
+      <div class="file-info">
+        <span id="compressed-filename"></span>
+        <span id="compressed-filesize"></span>
+      </div>
+      <img id="compressed-image" alt="Compressed Image">
+    </div>
+
+    <button id="download-button">Download Compressed Image</button>
+  </main>
+
+  <div class="faq">
+    <div class="faq-item">
+      <h3>What is image compression? <span>&#9660;</span></h3>
+      <div class="answer">Image compression is the process of reducing the file size of an image while maintaining acceptable quality.</div>
+    </div>
+    <div class="faq-item">
+      <h3>How does this tool work? <span>&#9660;</span></h3>
+      <div class="answer">This tool uses a combination of lossy and lossless compression algorithms to reduce the file size of your images.</div>
+    </div>
+    <div class="faq-item">
+      <h3>What file types are supported? <span>&#9660;</span></h3>
+      <div class="answer">Currently, the tool supports JPEG, PNG, and GIF file formats.</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Optimizilla. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

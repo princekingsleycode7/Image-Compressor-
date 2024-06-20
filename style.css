@@ -1,0 +1,172 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.language-selector select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#upload-button, #clear-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+#drop-area p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.file-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#compress-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  display: none;
+}
+
+.progress-bar-inner {
+  height: 20px;
+  width: 0;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}
+
+#after-compression {
+  margin-top: 20px;
+  display: none;
+}
+
+#download-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.faq {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-item h3 {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item .answer {
+  display: none;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Add these styles to make the images responsive */
+
+#uploaded-image,
+#compressed-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.file-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+#after-compression {
+  margin-top: 20px;
+  display: none;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
